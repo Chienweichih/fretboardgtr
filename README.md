@@ -24,8 +24,14 @@ To get started simply install the package from PyPI
 
 `fretboardgtr` needs to have the following install in order to run :
 
+**For Ubuntu / Debian:**
 ```shell
-sudo apt install libcairo2-dev pkg-config
+sudo apt install libcairo2-dev pkg-config python3-dev
+```
+
+**For Fedora / RHEL:**
+```shell
+sudo dnf install cairo-devel pkg-config python3-devel
 ```
 
 ## How to install
