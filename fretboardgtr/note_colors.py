@@ -70,6 +70,6 @@ class NoteColors(ConfigIniter):
         >>> NoteColors().from_short_interval(LongInterval.MINOR_SIXTH)
         "rgb(168, 107, 98)"
         """
-        cls_keys = list(self.__annotations__)
+        cls_keys = list(type(self).__annotations__)
         color = getattr(self, cls_keys[interval % 12])
         return color
